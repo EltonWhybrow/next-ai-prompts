@@ -4,8 +4,8 @@ import Nav from '@components/Nav';
 import Provider from '@components/Provider';
 
 export const metadata = {
-  title: "Promptopia",
-  descriptip: "Speed up your AI skills!"
+  title: "Promptinator",
+  description: "Speed up your dev & AI skills!"
 }
 
 export default function RootLayout({ children }) {

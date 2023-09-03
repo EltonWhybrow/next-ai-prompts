@@ -51,6 +51,7 @@ export const PromptCard = ({
                             : '/assets/icons/copy.svg'}
                         width={12}
                         height={12}
+                        alt="copy state"
                     />
                 </div>
             </div>

@@ -24,8 +24,6 @@ const Nav = () => {
         setUpProviders();
     }, [])
 
-    console.log('.....', toggleDropdown);
-
     return (
         <nav className="w-full flex-between mb-16 pt-3">
             <Link href="/" className="flex gap-2 flex-center">
@@ -34,7 +32,7 @@ const Nav = () => {
                     alt="logo"
                     width={30}
                     height={30} />
-                <p className="logo_text">Promptopia</p>
+                <p className="logo_text">Promptinator</p>
 
             </Link>
 

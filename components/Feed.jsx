@@ -4,12 +4,12 @@ import { PromptCard } from './PromptCard';
 
 
 const PromptCardList = ({ handleTagClick, data }) => {
-    console.log('xxxxxx', data);
+
     return (
         <div className='mt-16 prompt_layout'>
             {data.map((post) => (
                 <PromptCard
-                    key={post.id}
+                    key={post._id}
                     post={post}
                     handleTagClick={handleTagClick}
                 />
@@ -31,7 +31,6 @@ const Feed = () => {
         const fetchPosts = async () => {
             const response = await fetch('/api/prompt');
             const data = await response.json();
-            console.log('ZZZZZZ', data)
             setPosts(data);
         }
 
@@ -44,7 +43,7 @@ const Feed = () => {
             <form className='relative w-full flex-center'>
                 <input
                     type="text"
-                    placeholder="holde in text!!!!"
+                    placeholder="Search user,tag or prompt. COMING SOON!"
                     value={searchText}
                     onChange={handleSearchChange}
                     required
